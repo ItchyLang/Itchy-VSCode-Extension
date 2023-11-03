@@ -4,12 +4,13 @@
 	"description": "Syntax highlighting support for Itchy",
 	"version": "1.0.4",
 	"publisher": "Itchy",
-  "icon": "assets/icon.png",
+  	"icon": "",
 	"engines": {
 		"vscode": "^1.71.0"
 	},
 	"categories": [
-		"Programming Languages"
+		"Programming Languages",
+		"Snippets"
 	],
 	"author": {
 		"name": "senseiwells"
@@ -39,7 +40,10 @@
 			}
 		],
 		"snippets": [
-			
+			{
+				"language": "itchy",
+				"path": "./snippets/snippets.json"
+			}
 		]
 	}
 }

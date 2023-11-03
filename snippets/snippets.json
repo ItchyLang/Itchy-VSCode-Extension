@@ -1,0 +1,236 @@
+{
+    "Move Function": {
+        "prefix": "move",
+        "body": "move(${1:steps})$0",
+        "description": "Moves the sprite forward the number of steps in the direction the sprite is facing."
+    },
+    "Turn Clockwise Function": {
+        "prefix": "turn_cw",
+        "body": "turn_cw(${1:degrees})$0",
+        "description": "Turns the sprite (clockwise) the specified amount."
+    },
+    "Turn Counter-Clockwise Function": {
+        "prefix": "turn_ccw",
+        "body": "turn_ccw(${1:degrees})$0",
+        "description": "Turns the sprite (counter-clockwise) the specified amount."
+    },
+    "Go To Mouse Function": {
+        "prefix": "go_to_mouse",
+        "body": "go_to_mouse()",
+        "description": "Moves the sprite to the mouse-pointer."
+    },
+    "Go To Random Function": {
+        "prefix": "go_to_random",
+        "body": "go_to_random()",
+        "description": "Moves the sprite to a random position."
+    },
+    "Go To Sprite Function": {
+        "prefix": "go_to_sprite",
+        "body": "go_to_sprite(${1:sprite})$0",
+        "description": "Moves the sprite to another sprite."
+    },
+    "Go To Position Function": {
+        "prefix": "go_to",
+        "body": "go_to(${1:x}, ${2:y})$0",
+        "description": "Moves the sprite to the specified X and Y position."
+    },
+    "Glide To Mouse Function": {
+        "prefix": "glide_to_mouse",
+        "body": "glide_to_mouse(${1:seconds})$0",
+        "description": "Glides the sprite to the mouse-pointer taking as long as the specified amount of time"
+    },
+    "Glide To Random Function": {
+        "prefix": "glide_to_random",
+        "body": "glide_to_random(${1:seconds})$0",
+        "description": "Glides the sprite to a random position taking as long as the specified amount of time"
+    },
+    "Glide To Sprite Function": {
+        "prefix": "glide_to_sprite",
+        "body": "glide_to_sprite(${1:sprite}, ${2:seconds})$0",
+        "description": "Glides the sprite to another sprite taking as long as the specified amount of time"
+    },
+    "Glide To Position Function": {
+        "prefix": "glide_to",
+        "body": "glide_to(${1:x}, ${2:y}, ${3:seconds})$0",
+        "description": "Glides the sprite to the location, taking as long as the specified amount of time."
+    },
+    "Point In Direction Function": {
+        "prefix": "point_in_direction",
+        "body": "point_in_direction(${1:degrees})$0",
+        "description": "Points the sprite in the direction, 0 being up, 90 being right, 180 being down, 270 being left."
+    },
+    "Point Towards Mouse Function": {
+        "prefix": "point_towards_mouse",
+        "body": "point_towards_mouse()",
+        "description": "Points the sprite towards the mouse-pointer."
+    },
+    "Point Towards Function": {
+        "prefix": "point_towards_sprite",
+        "body": "point_towards_sprite(${1:sprite})$0",
+        "description": "Points the sprite towards another sprite."
+    },
+    "Move X Function": {
+        "prefix": "move_x",
+        "body": "move_x(${1:dx})$0",
+        "description": "Changes the sprite's X position by the amount."
+    },
+    "Move Y Function": {
+        "prefix": "move_y",
+        "body": "move_y(${1:dy})$0",
+        "description": "Changes the sprite's Y position by the amount."
+    },
+    "Set X Function": {
+        "prefix": "set_x",
+        "body": "set_x(${1:x})$0",
+        "description": "Sets the sprite's X position to the specified amount."
+    },
+    "Set Y Function": {
+        "prefix": "set_y",
+        "body": "set_y(${1:y})$0",
+        "description": "Sets the sprite's Y position to the specified amount."
+    },
+    "If On Edge Bounce Function": {
+        "prefix": "if_on_edge_bounce",
+        "body": "if_on_edge_bounce()",
+        "description": "If touching the edge of the screen, the sprite's direction flips over."
+    },
+    "Fix Rotation Function": {
+        "prefix": "fix_rotation",
+        "body": "fix_rotation()",
+        "description": "This will fix the sprite's rotation in place and it will no longer rotate."
+    },
+    "Horizontal Rotation Function": {
+        "prefix": "horizontal_rotation",
+        "body": "horizontal_rotation()",
+        "description": "This will only allow the sprite to rotate left (-90) and right (90)."
+    },
+    "Free Rotation Function": {
+        "prefix": "free_rotation",
+        "body": "free_rotation()",
+        "description": "This will only allow the sprite to rotate in any."
+    },
+    "X Position Field": {
+        "prefix": "x_position",
+        "body": "x_position",
+        "description": "The X position of the sprite."
+    },
+    "Y Position Field": {
+        "prefix": "y_position",
+        "body": "y_position",
+        "description": "The Y position of the sprite."
+    },
+    "Direction Field": {
+        "prefix": "direction",
+        "body": "direction",
+        "description": "The direction of the sprite."
+    },
+
+    "Wait Function": {
+        "prefix": "wait",
+        "body": "wait(${1:seconds})$0",
+        "description": "Waits a given amount of seconds."
+    },
+    "Wait Until Function": {
+        "prefix": "wait_until",
+        "body": "wait_until(${1:condition})$0",
+        "description": "Pauses the script until the condition is true."
+    },
+    "Stop All Function": {
+        "prefix": "stop_all",
+        "body": "stop_all()",
+        "description": "Stops everything."
+    },
+    "Stop This Function": {
+        "prefix": "stop_this",
+        "body": "stop_this()",
+        "description": "Stops this script."
+    },
+    "Stop Other Function": {
+        "prefix": "stop_other",
+        "body": "stop_other()",
+        "description": "Stops all other scripts."
+    },
+    "Create Clone Function": {
+        "prefix": "create_clone",
+        "body": "create_clone(${1:sprite})$0",
+        "description": "Creates a clone of a given sprite."
+    },
+    "Delete This Clone Function": {
+        "prefix": "delete_this_clone",
+        "body": "delete_this_clone()",
+        "description": "Deletes this clone."
+    },
+
+    "When Flag Clicked Event": {
+        "prefix": "when flag_clicked",
+        "body": [
+            "when flag_clicked {",
+            "\t$0",
+            "}"
+        ],
+        "description": "When the flag is clicked, the statements are run."
+    },
+    "When Key Pressed Event": {
+        "prefix": "when key_pressed",
+        "body": [
+            "when key_pressed \"${1:key}\" {",
+            "\t$0",
+            "}"
+        ],
+        "description": "When a given key is pressed, the statements are run."
+    },
+    "When Sprite Clicked Event": {
+        "prefix": "when sprite_clicked",
+        "body": [
+            "when sprite_clicked {",
+            "\t$0",
+            "}"
+        ],
+        "description": "When the sprite is clicked, the statements are run."
+    },
+    "When Backdrop Switches To Event": {
+        "prefix": "when backdrop_switches_to",
+        "body": [
+            "when backdrop_switches_to \"${1:backdrop}\" {",
+            "\t$0",
+            "}"
+        ],
+        "description": "When the backdrop is switched to a given backdrop, the statements are run."
+    },
+    "When Loudness Greater Than Event": {
+        "prefix": "when loudness_gt",
+        "body": [
+            "when loudness_gt \"${1:loudness}\" {",
+            "\t$0",
+            "}"
+        ],
+        "description": "When the loudness is greater than a given loudness, the statements are run."
+    },
+    "When Timer Greater Than Event": {
+        "prefix": "when timer_gt",
+        "body": [
+            "when timer_gt \"${1:time}\" {",
+            "\t$0",
+            "}"
+        ],
+        "description": "When the timer is greater than a given time, the statements are run."
+    },
+    "When Receive Event": {
+        "prefix": "when received",
+        "body": [
+            "when received \"${1:message}\" {",
+            "\t$0",
+            "}"
+        ],
+        "description": "When a given message is received, the statements are run."
+    },
+    "When Cloned Event": {
+        "prefix": "when cloned",
+        "body": [
+            "when cloned {",
+            "\t$0",
+            "}"
+        ],
+        "description": "When clone is created, and will only be run by that clone."
+    }
+}
