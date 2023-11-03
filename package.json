@@ -1,0 +1,45 @@
+{
+	"name": "itchy",
+	"displayName": "Itchy Language Extension",
+	"description": "Syntax highlighting support for Itchy",
+	"version": "1.0.4",
+	"publisher": "Itchy",
+  "icon": "assets/icon.png",
+	"engines": {
+		"vscode": "^1.71.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"author": {
+		"name": "senseiwells"
+	},
+	"repository": {
+		"url": ""
+	},
+	"contributes": {
+		"languages": [
+			{
+				"id": "itchy",
+				"aliases": [
+					"Itchy",
+					"itchy"
+				],
+				"extensions": [
+					".ich"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "itchy",
+				"scopeName": "source.itchy",
+				"path": "./syntaxes/itchy.tmLanguage.json"
+			}
+		],
+		"snippets": [
+			
+		]
+	}
+}
