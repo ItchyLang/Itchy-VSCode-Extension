@@ -1,4 +1,20 @@
 {
+    "Load Costume Function": {
+        "prefix": "load_costume",
+        "body": "load_costume(${1:costume_name}, ${2:costume})$0",
+        "description": "Loads a costume for a sprite, the parameters *must* be a string literal for a name and file path or url."
+    },
+    "Load Backdrop Function": {
+        "prefix": "load_backdrop",
+        "body": "load_backdrop(${1:backdrop_name}, ${2:backdrop})$0",
+        "description": "Loads a backdrop for the stage, the parameters *must* be a string literal for a name and file path or url."
+    },
+    "Load Sound Function": {
+        "prefix": "load_sound",
+        "body": "load_sound(${1:sound_name}, ${2:sound})$0",
+        "description": "Loads a sound for a sprite or stage, the parameters *must* be a string literal for a name and file path or url."
+    },
+
     "Move Function": {
         "prefix": "move",
         "body": "move(${1:steps})$0",
@@ -125,6 +141,260 @@
         "description": "The direction of the sprite."
     },
 
+    "Say For Function": {
+        "prefix": "say_for",
+        "body": "say_for(${1:text}, ${2:seconds})$0",
+        "description": "Shows a speech bubble with the text for the specified amount of seconds."
+    },
+    "Say Function": {
+        "prefix": "say",
+        "body": "say(${1:text})$0",
+        "description": "Shows a speech bubble with the text."
+    },
+    "Think For Function": {
+        "prefix": "think_for",
+        "body": "think_for(${1:text}, ${2:seconds})$0",
+        "description": "Shows a thinking bubble with the text for the specified amount of seconds."
+    },
+    "Think Function": {
+        "prefix": "think",
+        "body": "think(${1:text})$0",
+        "description": "Shows a thinking bubble with the text."
+    },
+    "Switch Costume Function": {
+        "prefix": "switch_costume",
+        "body": "switch_costume(${1:costume})$0",
+        "description": "Switches the sprite's costume to the specified costume."
+    },
+    "Next Costume Function": {
+        "prefix": "next_costume",
+        "body": "next_costume()",
+        "description": "Switches the sprite's costume to the next costume."
+    },
+    "Switch Backdrop Function": {
+        "prefix": "switch_backdrop",
+        "body": "switch_backdrop(${1:backdrop})$0",
+        "description": "Switches the stage's backdrop to the specified backdrop."
+    },
+    "Switch Backdrop And Wait Function": {
+        "prefix": "switch_backdrop_and_wait",
+        "body": "switch_backdrop_and_wait(${1:backdrop})$0",
+        "description": "Like the `switch_backdrop()` function, though it waits until all of the events triggered by this have completed. (Stage only)."
+    },
+    "Next Backdrop Function": {
+        "prefix": "next_backdrop",
+        "body": "next_backdrop()",
+        "description": "Switches the stage's backdrop to the next backdrop."
+    },
+    "Change Size Function": {
+        "prefix": "change_size",
+        "body": "change_size(${1:delta})$0",
+        "description": "Changes the sprite's size by the specified amount."
+    },
+    "Set Size Function": {
+        "prefix": "set_size",
+        "body": "set_size(${1:percentage})$0",
+        "description": "Sets the sprite's size to the specified amount."
+    },
+    "Change Colour Effect Function": {
+        "prefix": "change_colour_effect",
+        "body": "change_colour_effect(${1:delta})$0",
+        "description": "Changes the colour effect by the specified amount."
+    },
+    "Change Fisheye Effect Function": {
+        "prefix": "change_fisheye_effect",
+        "body": "change_fisheye_effect(${1:delta})$0",
+        "description": "Changes the fisheye effect by the specified amount."
+    },
+    "Change Whirl Effect Function": {
+        "prefix": "change_whirl_effect",
+        "body": "change_whirl_effect(${1:delta})$0",
+        "description": "Changes the whirl effect by the specified amount."
+    },
+    "Change Pixelate Effect Function": {
+        "prefix": "change_pixelate_effect",
+        "body": "change_pixelate_effect(${1:delta})$0",
+        "description": "Changes the pixelate effect by the specified amount."
+    },
+    "Change Mosiac Effect Function": {
+        "prefix": "change_mosiac_effect",
+        "body": "change_mosiac_effect(${1:delta})$0",
+        "description": "Changes the mosiac effect by the specified amount."
+    },
+    "Change Brightness Effect Function": {
+        "prefix": "change_brightness_effect",
+        "body": "change_brightness_effect(${1:delta})$0",
+        "description": "Changes the brightness effect by the specified amount."
+    },
+    "Change Ghost Effect Function": {
+        "prefix": "change_ghost_effect",
+        "body": "change_ghost_effect(${1:delta})$0",
+        "description": "Changes the ghost effect by the specified amount."
+    },
+    "Set Colour Effect Function": {
+        "prefix": "set_colour_effect",
+        "body": "set_colour_effect(${1:effect})$0",
+        "description": "Sets the colour effect to the specified amount."
+    },
+    "Set Fisheye Effect Function": {
+        "prefix": "set_fisheye_effect",
+        "body": "set_fisheye_effect(${1:effect})$0",
+        "description": "Sets the fisheye effect to the specified amount."
+    },
+    "Set Whirl Effect Function": {
+        "prefix": "set_whirl_effect",
+        "body": "set_whirl_effect(${1:effect})$0",
+        "description": "Sets the whirl effect to the specified amount."
+    },
+    "Set Pixelate Effect Function": {
+        "prefix": "set_pixelate_effect",
+        "body": "set_pixelate_effect(${1:effect})$0",
+        "description": "Sets the pixelate effect to the specified amount."
+    },
+    "Set Mosiac Effect Function": {
+        "prefix": "set_mosiac_effect",
+        "body": "set_mosiac_effect(${1:effect})$0",
+        "description": "Sets the mosiac effect to the specified amount."
+    },
+    "Set Brightness Effect Function": {
+        "prefix": "set_brightness_effect",
+        "body": "set_brightness_effect(${1:effect})$0",
+        "description": "Sets the brightness effect to the specified amount."
+    },
+    "Set Ghost Effect Function": {
+        "prefix": "set_ghost_effect",
+        "body": "set_ghost_effect(${1:effect})$0",
+        "description": "Sets the ghost effect to the specified amount."
+    },
+    "Clear Graphic Effects Function": {
+        "prefix": "clear_effects",
+        "body": "clear_effects()",
+        "description": "Clears all graphic effects on the sprite."
+    },
+    "Show Function": {
+        "prefix": "show",
+        "body": "show()",
+        "description": "Shows the sprite."
+    },
+    "Hide Function": {
+        "prefix": "hide",
+        "body": "hide()",
+        "description": "Hides the sprite."
+    },
+    "Go To Front Layer Function": {
+        "prefix": "go_to_front_layer",
+        "body": "go_to_front_layer()",
+        "description": "Brings the sprite to the front layer."
+    },
+    "Go To Back Function": {
+        "prefix": "go_to_back_layer",
+        "body": "go_to_back_layer()",
+        "description": "Sends the sprite to the back layer."
+    },
+    "Go Forward Layers Function": {
+        "prefix": "go_forward_layers",
+        "body": "go_forward_layers(${1:layers})$0",
+        "description": "Brings the sprite forward the specified amount of layers."
+    },
+    "Go Backward Layers Function": {
+        "prefix": "go_backward_layers",
+        "body": "go_backward_layers(${1:layers})$0",
+        "description": "Sends the sprite backward the specified amount of layers."
+    },
+    "Costume Number Field": {
+        "prefix": "costume_number",
+        "body": "costume_number",
+        "description": "The number of the sprite's costume."
+    },
+    "Costume Name Field": {
+        "prefix": "costume_name",
+        "body": "costume_name",
+        "description": "The name of the sprite's costume."
+    },
+    "Backdrop Number Field": {
+        "prefix": "backdrop_number",
+        "body": "backdrop_number",
+        "description": "The number of the stage's backdrop."
+    },
+    "Backdrop Name Field": {
+        "prefix": "backdrop_name",
+        "body": "backdrop_name",
+        "description": "The name of the stage's backdrop."
+    },
+    "Sprite Size Field": {
+        "prefix": "sprite_size",
+        "body": "sprite_size",
+        "description": "The size of the sprite."
+    },
+
+    "Play Sound Function": {
+        "prefix": "play_sound",
+        "body": "play_sound(${1:sound})$0",
+        "description": "Plays the specified sound and blocks the script until the sound finishes playing."
+    },
+    "Start Sound Function": {
+        "prefix": "start_sound",
+        "body": "start_sound(${1:sound})$0",
+        "description": "Plays the specified sound asynchronously."
+    },
+    "Stop All Sounds Function": {
+        "prefix": "stop_sounds",
+        "body": "stop_sounds()",
+        "description": "Stops all sounds."
+    },
+    "Change Pitch Function": {
+        "prefix": "change_pitch",
+        "body": "change_pitch(${1:delta})$0",
+        "description": "Changes the pitch of the sound by the specified amount."
+    },
+    "Change Pan Function": {
+        "prefix": "change_pan",
+        "body": "change_pan(${1:delta})$0",
+        "description": "Changes the pan (sound in L/R ear) of the sound by the specified amount."
+    },
+    "Set Pitch Function": {
+        "prefix": "set_pitch",
+        "body": "set_pitch(${1:pitch})$0",
+        "description": "Sets the pitch of the sound to the specified amount."
+    },
+    "Set Pan Function": {
+        "prefix": "set_pan",
+        "body": "set_pan(${1:pan})$0",
+        "description": "Sets the pan (sound in L/R ear) of the sound to the specified amount."
+    },
+    "Clear Sound Effects Function": {
+        "prefix": "clear_sound_effects",
+        "body": "clear_sound_effects()",
+        "description": "Clears all sound effects on the sprite."
+    },
+    "Change Volume Function": {
+        "prefix": "change_volume",
+        "body": "change_volume(${1:delta})$0",
+        "description": "Changes the volume of the sound by the specified amount."
+    },
+    "Set Volume Function": {
+        "prefix": "set_volume",
+        "body": "set_volume(${1:percentage})$0",
+        "description": "Sets the volume of the sound to the specified amount."
+    },
+    "Volume Field": {
+        "prefix": "sound_volume",
+        "body": "sound_volume",
+        "description": "The volume of the sound."
+    },
+
+    "Broadcast Function": {
+        "prefix": "broadcast",
+        "body": "broadcast(${1:message})$0",
+        "description": "Broadcasts a message to all other scripts."
+    },
+    "Broadcast And Wait Function": {
+        "prefix": "broadcast_and_wait",
+        "body": "broadcast_and_wait(${1:message})$0",
+        "description": "Like the `broadcast()` function, though it waits until all of the events triggered by this have completed."
+    },
+
+
     "Wait Function": {
         "prefix": "wait",
         "body": "wait(${1:seconds})$0",
@@ -160,6 +430,284 @@
         "body": "delete_this_clone()",
         "description": "Deletes this clone."
     },
+
+    "Touching Mouse Function": {
+        "prefix": "is_touching_mouse",
+        "body": "is_touching_mouse()",
+        "description": "Checks if the sprite is touching the mouse-pointer."
+    },
+    "Touching Sprite Function": {
+        "prefix": "is_touching_sprite",
+        "body": "is_touching_sprite(${1:sprite})$0",
+        "description": "Checks if the sprite is touching another sprite."
+    },
+    "Touching Colour Function": {
+        "prefix": "is_touching_colour",
+        "body": "is_touching_colour(${1:colour})$0",
+        "description": "Checks if the sprite is touching a colour, colour should be passed in as a string hex or integer."
+    },
+    "Colour Touching Colour Function": {
+        "prefix": "is_colour_touching_colour",
+        "body": "is_colour_touching_colour(${1:colour1}, ${2:colour2})$0",
+        "description": "Checks if a colour on the sprite is touching a specific colour, colours should be passed in as a string hex or integer."
+    },
+    "Distance To Mouse Function": {
+        "prefix": "distance_to_mouse",
+        "body": "distance_to_mouse()",
+        "description": "Returns the distance to the mouse-pointer."
+    },
+    "Distance To Sprite Function": {
+        "prefix": "distance_to_sprite",
+        "body": "distance_to_sprite(${1:sprite})$0",
+        "description": "Returns the distance to another sprite."
+    },
+    "Ask And Wait Function": {
+        "prefix": "ask_and_wait",
+        "body": "ask_and_wait(${1:question})$0",
+        "description": "Asks the user a question and waits for a response, returns the response."
+    },
+    "Is Key Pressed Function": {
+        "prefix": "is_key_pressed",
+        "body": "is_key_pressed(${1:key})$0",
+        "description": "Checks if a given key is pressed."
+    },
+    "Is Mouse Down Function": {
+        "prefix": "is_mouse_down",
+        "body": "is_mouse_down()",
+        "description": "Checks if the mouse is down."
+    },
+    "Mouse X Field": {
+        "prefix": "mouse_x",
+        "body": "mouse_x",
+        "description": "The X position of the mouse-pointer."
+    },
+    "Mouse Y Field": {
+        "prefix": "mouse_y",
+        "body": "mouse_y",
+        "description": "The Y position of the mouse-pointer."
+    },
+    "Set Draggable": {
+        "prefix": "set_draggable",
+        "body": "set_draggable()",
+        "description": "Sets whether the sprite can be dragged with the mouse."
+    },
+    "Set Not Draggable": {
+        "prefix": "set_not_draggable",
+        "body": "set_not_draggable()",
+        "description": "Sets whether the sprite can be dragged with the mouse."
+    },
+    "Loudness Field": {
+        "prefix": "loudness",
+        "body": "loudness",
+        "description": "The loudness being detected by the microphone."
+    },
+    "Timer Field": {
+        "prefix": "timer",
+        "body": "timer",
+        "description": "How much time has passed since the Scratch program was opened or the timer reset."
+    },
+    "Reset Timer Function": {
+        "prefix": "reset_timer",
+        "body": "reset_timer()",
+        "description": "Resets the timer."
+    },
+    "Get X Position Of Sprite": {
+        "prefix": "get_sprite_x_position",
+        "body": "get_sprite_x_position(${1:sprite})$0",
+        "description": "Returns the X position of the sprite."
+    },
+    "Get Y Position Of Sprite": {
+        "prefix": "get_sprite_y_position",
+        "body": "get_sprite_y_position(${1:sprite})$0",
+        "description": "Returns the Y position of the sprite."
+    },
+    "Get Direction Of Sprite": {
+        "prefix": "get_sprite_direction",
+        "body": "get_sprite_direction(${1:sprite})$0",
+        "description": "Returns the direction of the sprite."
+    },
+    "Get Costume Number Of Sprite": {
+        "prefix": "get_sprite_costume_number",
+        "body": "get_sprite_costume_number(${1:sprite})$0",
+        "description": "Returns the costume number of the sprite."
+    },
+    "Get Costume Name Of Sprite": {
+        "prefix": "get_sprite_costume_name",
+        "body": "get_sprite_costume_name(${1:sprite})$0",
+        "description": "Returns the costume name of the sprite."
+    },
+    "Get Size Of Sprite": {
+        "prefix": "get_sprite_size",
+        "body": "get_sprite_size(${1:sprite})$0",
+        "description": "Returns the size of the sprite."
+    },
+    "Get Volume Of Sprite": {
+        "prefix": "get_sprite_volume",
+        "body": "get_sprite_volume(${1:sprite})$0",
+        "description": "Returns the volume of the sprite."
+    },
+    "Get Variable Of Sprite": {
+        "prefix": "get_sprite_variable",
+        "body": "get_sprite_variable(${1:sprite}, ${2:variable})$0",
+        "description": "Returns the value of the variable on the sprite."
+    },
+    "Get Backdrop Number": {
+        "prefix": "get_backdrop_number",
+        "body": "get_backdrop_number()",
+        "description": "Returns the backdrop number."
+    },
+    "Get Backdrop Name": {
+        "prefix": "get_backdrop_name",
+        "body": "get_backdrop_name()",
+        "description": "Returns the backdrop name."
+    },
+    "Get Backdrop Volume": {
+        "prefix": "get_volume",
+        "body": "get_volume()",
+        "description": "Returns the volume."
+    },
+    "Get Current Year": {
+        "prefix": "get_year",
+        "body": "get_year()",
+        "description": "Returns the current year."
+    },
+    "Get Current Month": {
+        "prefix": "get_month",
+        "body": "get_month()",
+        "description": "Returns the current month."
+    },
+    "Get Current Date": {
+        "prefix": "get_date",
+        "body": "get_date()",
+        "description": "Returns the current date."
+    },
+    "Get Current Day Of Week": {
+        "prefix": "get_day_of_week",
+        "body": "get_day_of_week()",
+        "description": "Returns the current day of the week."
+    },
+    "Get Hour": {
+        "prefix": "get_hour",
+        "body": "get_hour()",
+        "description": "Returns the current hour."
+    },
+    "Get Minute": {
+        "prefix": "get_minute",
+        "body": "get_minute()",
+        "description": "Returns the current minute."
+    },
+    "Get Second": {
+        "prefix": "get_second",
+        "body": "get_second()",
+        "description": "Returns the current second."
+    },
+    "Get Days Since 2000": {
+        "prefix": "get_days_since_2000",
+        "body": "get_days_since_2000()",
+        "description": "Returns the number of days since 2000."
+    },
+    "Get Username": {
+        "prefix": "get_username",
+        "body": "get_username()",
+        "description": "Returns the username of the user."
+    },
+
+    "Random Number Function": {
+        "prefix": "random_number",
+        "body": "random_number(${1:min}, ${2:max})$0",
+        "description": "Returns a random number between the min and max."
+    },
+    "Character At Function": {
+        "prefix": "char_at",
+        "body": "char_at(${1:string}, ${2:index})$0",
+        "description": "Returns the character at the specified index."
+    },
+    "String Length Of Function": {
+        "prefix": "string_length",
+        "body": "string_length(${1:string})$0",
+        "description": "Returns the length of the string."
+    },
+    "String Contains Function": {
+        "prefix": "string_contains",
+        "body": "string_contains(${1:string}, ${2:substring})$0",
+        "description": "Returns whether the string contains the substring."
+    },
+    "Round Function": {
+        "prefix": "round",
+        "body": "round(${1:number})$0",
+        "description": "Returns the number rounded to the nearest integer."
+    },
+    "Abs Function": {
+        "prefix": "abs",
+        "body": "abs(${1:number})$0",
+        "description": "Returns the absolute value of the number."
+    },
+    "Ceil Function": {
+        "prefix": "ceil",
+        "body": "ceil(${1:number})$0",
+        "description": "Returns the number rounded up to the nearest integer."
+    },
+    "Floor Function": {
+        "prefix": "floor",
+        "body": "floor(${1:number})$0",
+        "description": "Returns the number rounded down to the nearest integer."
+    },
+    "Sqrt Function": {
+        "prefix": "sqrt",
+        "body": "sqrt(${1:number})$0",
+        "description": "Returns the square root of the number."
+    },
+    "Sin Function": {
+        "prefix": "sin",
+        "body": "sin(${1:number})$0",
+        "description": "Returns the sine of the number."
+    },
+    "Cos Function": {
+        "prefix": "cos",
+        "body": "cos(${1:number})$0",
+        "description": "Returns the cosine of the number."
+    },
+    "Tan Function": {
+        "prefix": "tan",
+        "body": "tan(${1:number})$0",
+        "description": "Returns the tangent of the number."
+    },
+    "Asin Function": {
+        "prefix": "asin",
+        "body": "asin(${1:number})$0",
+        "description": "Returns the arcsine of the number."
+    },
+    "Acos Function": {
+        "prefix": "acos",
+        "body": "acos(${1:number})$0",
+        "description": "Returns the arccosine of the number."
+    },
+    "Atan Function": {
+        "prefix": "atan",
+        "body": "atan(${1:number})$0",
+        "description": "Returns the arctangent of the number."
+    },
+    "Ln Function": {
+        "prefix": "ln",
+        "body": "ln(${1:number})$0",
+        "description": "Returns the natural logarithm of the number."
+    },
+    "Log Function": {
+        "prefix": "log",
+        "body": "log(${1:number})$0",
+        "description": "Returns the base 10 logarithm of the number."
+    },
+    "E ^ Function": {
+        "prefix": "e_to",
+        "body": "e_to(${1:number})$0",
+        "description": "Returns e to the power of the number."
+    },
+    "Ten ^ Function": {
+        "prefix": "ten_to",
+        "body": "ten_to(${1:number})$0",
+        "description": "Returns 10 to the power of the number."
+    },
+
 
     "When Flag Clicked Event": {
         "prefix": "when flag_clicked",
